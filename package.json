@@ -1,6 +1,6 @@
 {
   "name": "@sxzz/popperjs-es",
-  "version": "2.11.4",
+  "version": "2.11.4-es.0",
   "description": "Tooltip and Popover Positioning Engine",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,6 +12,7 @@
     },
     "./*": "./*"
   },
+  "types": "./index.d.ts",
   "author": "Federico Zivolo <federico.zivolo@gmail.com>",
   "license": "MIT",
   "repository": "github:popperjs/popper-core",
@@ -33,6 +34,9 @@
     "/lib"
   ],
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rimraf lib && rimraf dist && rimraf test/visual/dist",
     "test": "yarn test:unit && yarn test:functional",
