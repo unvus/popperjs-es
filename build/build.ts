@@ -9,7 +9,7 @@ const bundle = await rollup({
   plugins: [
     babel(),
     esbuild({
-      target: 'esnext',
+      target: 'es6',
       minify: true,
       define: {
         'process.env.NODE_ENV': JSON.stringify('production'),
